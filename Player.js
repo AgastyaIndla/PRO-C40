@@ -38,13 +38,13 @@ class Player {
     })
   }
 
-  getplayersAtEnd(){
-    database.ref('playersAtEnd').on("value", (data) => {
+  getPlayersAtEnd(){
+    database.ref('PlayersarsAtEnd').on("value", (data) => {
       this.rank = data.val();
     })
   }
 
- static updateplayersAtEnd(rank){
+ static updatePlayersAtEnd(rank){
    database.ref('/').update({
      playersAtEnd: rank 
    });
