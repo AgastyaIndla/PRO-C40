@@ -39,7 +39,7 @@ class Player {
   }
 
   getPlayersAtEnd(){
-    database.ref('PlayersarsAtEnd').on("value", (data) => {
+    database.ref('playersAtEnd').on("value", (data) => {
       this.rank = data.val();
     })
   }
